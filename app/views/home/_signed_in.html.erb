@@ -1,11 +1,6 @@
 <div class="container home-signed-in margin-top-100">
   <div class="row">
-    <div class="col-lg-4">
-      <h4>Latest News</h4>
-      <p><i class="fas fa-newspaper"></i> Press Release</p>
-      <hr>
-        <%=render'news'%>
-    </div>
+
     <div class="col-lg-4">
       <h4>Hi, <%=current_user.name%></h4>
       <p><i class="fas fa-user-tie"></i> Emp no.#POP00<%=current_user.id%></p>
@@ -17,6 +12,7 @@
             <li>   <i class="fas fa-chevron-circle-right"></i><a href="#"> Buy Handset or Gadgets</a></li>
         </ul>
     </div>
+
         <div class="col-lg-4">
           <div class="card">
             <div class="card-body">
@@ -32,7 +28,18 @@
                  <%=render'home/charts/voice'%>
             </div>
           </div>
-
+        </div>
+        
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h4>Latest News</h4>
+              <p><i class="fas fa-newspaper"></i> Press Release</p>
+              <br>
+              <hr>
+                <%=render'news'%>
+            </div>
+          </div>
         </div>
     </div>
   </div>
