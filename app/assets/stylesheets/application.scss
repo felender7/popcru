@@ -1,12 +1,44 @@
 // $navbar-default-bg: #312312;
 // $light-orange: #ff8c00;
 // $navbar-default-color: $light-orange;
-
+$secondary-color :red;
+$primary-color:black;
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "bootstrap";
 @import "sticky-footer";
 @import "announcements";
+@import "carousel";
+
+.bg-black {background-color: #1e272e;}
+
+.stacked-bar-container { border-radius:50px; background-color:$secondary-color; max-height:20px; height:20px; overflow:hidden;}
+.stacked-bar-info-title, .stacked-bar-info-value {
+    float: right;
+}
+.stacked-bar-info-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+.stacked-bar-info-title-points {
+    font-size: 11px;
+    text-transform: uppercase;
+
+}
+.usage-container-title > .btn-link {
+    background: transparent;
+    color: #889391;
+    font-size: 14px;
+    text-decoration: none;
+    float: right;
+}
+
+.bar-segment {
+    background-color: transparent;
+    border-right: $primary-color solid 1px;
+}
 
 // Fixes bootstrap nav-brand container overlap
 @include media-breakpoint-down(xs) {
@@ -19,4 +51,20 @@
 // Masquerade alert shouldn't have a bottom margin
 body > .alert {
   margin-bottom: 0;
+}
+
+.points-circle {
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #212121;
+}
+.points-circle p {
+  margin-left: auto;
+  margin-right: auto;
+  color:#fff;
+}
+.margin-top-100{
+  margin-top: 100px;
 }

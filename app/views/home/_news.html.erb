@@ -1,0 +1,6 @@
+<% @news.each do |news| %>
+<h5><%= link_to (news.title) , news  %></h5> <br>
+  <p><%= news.body.truncate(35) %></p>
+<br>
+
+<% end %>
