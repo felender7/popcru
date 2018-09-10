@@ -33,3 +33,9 @@ body > .alert {
 .margin-top-100{
   margin-top: 100px;
 }
+.navbar.navbar-nav .nav-item .nav-link {
+  color: #fff;
+  -webkit-transition: .35s;
+  -o-transition: .35s;
+ transition: .35s;
+}
