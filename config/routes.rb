@@ -1,6 +1,7 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
+  get 'buy-online', to: 'buy#index'
   resources :news
   namespace :admin do
       resources :users

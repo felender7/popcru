@@ -6,26 +6,24 @@
       <p><i class="fas fa-user-tie"></i> Emp no.#POP00<%=current_user.id%> | <%=current_user.phone%></p>
       <hr>
       <h3>Things you can do online</h3>
+      <small>
         <ul class="list-unstyled">
             <li>   <i class="fas fa-chevron-circle-right"></i> <a href="#"> Buy Airtime</a></li>
-            <li>   <i class="fas fa-chevron-circle-right"></i><a href="#"> Apply for Loan</a></li>
+            <li>   <i class="fas fa-chevron-circle-right"></i><a href="#">  Apply for Loan</a></li>
+            <li>   <i class="fas fa-chevron-circle-right"></i><a href="#"> Bus Ticket</a></li>
             <li>   <i class="fas fa-chevron-circle-right"></i><a href="#"> Buy Handset or Gadgets</a></li>
         </ul>
+      </small>
+
     </div>
 
         <div class="col-lg-4">
           <div class="card">
             <div class="card-body">
-              <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-black rounded box-shadow">
-                <img class="mr-3" src="https://www.choicehotels.com/cms/images/choice-hotels/choice-privileges/cp-points-for-stays-icon/cp-points-for-stays-icon.png" alt="" width="48" height="48">
-                <div class="lh-100">
-                  <h6 class="mb-0 text-white lh-100">Points</h6>
-                  <small>200 pts</small>
-                </div>
-              </div>
-              <hr>
-                 <%=render'home/charts/data'%> <br>
-                 <%=render'home/charts/voice'%>
+              <%=render'home/charts/points'%>
+              <%=render'home/charts/credit'%>
+              <%=render'home/charts/data'%>
+              <%=render'home/charts/voice'%>
             </div>
           </div>
         </div>
