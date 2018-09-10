@@ -1,3 +1,4 @@
+<div class="container">
 <div class="page-header">
   <%= link_to news_index_path, class: 'btn btn-default' do %>
     <span class="glyphicon glyphicon-list-alt"></span>
@@ -7,14 +8,13 @@
     <span class="glyphicon glyphicon-pencil"></span>
     Edit
   <% end %>
-  <h1>Show news</h1>
+
 </div>
 
 <dl class="dl-horizontal">
-  <dt>Title:</dt>
-  <dd><%= @news.title %></dd>
 
-  <dt>Body:</dt>
-  <dd><%= @news.body %></dd>
+  <dd> <h3><%= @news.title %></h3></dd>
+  <dd><p><%= @news.body %></p></dd>
 
 </dl>
+</div>
