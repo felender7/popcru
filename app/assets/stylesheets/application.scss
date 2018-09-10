@@ -13,33 +13,6 @@ $primary-color:black;
 .card-body {height:420px}
 .bg-black {background-color: #1e272e;}
 
-.stacked-bar-container { border-radius:50px; background-color:$secondary-color; max-height:20px; height:20px; overflow:hidden;}
-.stacked-bar-info-title, .stacked-bar-info-value {
-    float: right;
-}
-.stacked-bar-info-title {
-    font-size: 11px;
-    text-transform: uppercase;
-    margin-top: 4px;
-}
-
-.stacked-bar-info-title-points {
-    font-size: 11px;
-    text-transform: uppercase;
-
-}
-.usage-container-title > .btn-link {
-    background: transparent;
-    color: #889391;
-    font-size: 14px;
-    text-decoration: none;
-    float: right;
-}
-
-.bar-segment {
-    background-color: transparent;
-    border-right: $primary-color solid 1px;
-}
 
 // Fixes bootstrap nav-brand container overlap
 @include media-breakpoint-down(xs) {
@@ -53,8 +26,9 @@ $primary-color:black;
 body > .alert {
   margin-bottom: 0;
 }
+
 #logo.btn{
-  font-size: 16px
+  font-size: 16px;
 }
 .margin-top-100{
   margin-top: 100px;
